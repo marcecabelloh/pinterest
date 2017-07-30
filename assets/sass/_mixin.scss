@@ -1,0 +1,16 @@
+@mixin logo(){
+
+	width: 40px;
+	margin-left:20px;
+	margin-top:10px;
+	
+}
+
+@mixin buscador(){
+	background-color: $color-gris;
+	width:700px;
+	margin-left:20px;
+	padding:10px;
+	color:$color-negro;
+	border:none;
+}

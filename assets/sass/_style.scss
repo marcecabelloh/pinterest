@@ -15,10 +15,7 @@ nav{
 }
 
 .logo{
-	width: 40px;
-	margin-left:20px;
-	margin-top:10px;
-	
+	@include logo();
 }
 
 .gatito{
@@ -29,36 +26,26 @@ nav{
 .contenedor{
 	width:90%;
 	margin: 15px auto;
-	img{
-	border-radius: 20px;
+	.img-pinterest{
+	display:inline-block;
+	border-radius: $borde;
+	width: 110%;
 	}
 }
 
 .elemento{
-	width:180px;
-	margin-left:80px;
-	margin-bottom:15px;
 	p{
 	padding:10px;
 	font-size:13px;
 	@extend .descripcion;
 	}
-	img{
+	.img-modal{
 	width:100%;
 	}
 }
 
-.row .col{
-	padding:0;
-}
-
 input{
-	background-color: $color-gris;
-	width:700px;
-	margin-left:20px;
-	padding:10px;
-	color:$color-negro;
-	border:none;
+	@include buscador();
 }
 
 .materialboxed{
@@ -94,10 +81,14 @@ nav, nav a, nav ul a, span.badge.new{
 	font-size:$tamano-letra;
 }
 .user{
-	font-size:10px;
+	font-size:$fuente-user;
 }
 
 .btn-leerlo{
 	background-color:$color-gris;
 	color:$color-negro;
+}
+
+.modal{
+	width:$modal;
 }
